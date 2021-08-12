@@ -20,7 +20,7 @@ function giai_phuong_trinh_bac_hai() {
         }else if(d == 0) {
             document.getElementById("result").innerHTML = "Nghiem kep x1 = x2 = " + -b/2*a
         }else {
-            document.getElementById("result").innerHTML = "x1 = " + Math((-b + Math.sqrt(d)) / 2*a) + "," + "x2 = " + Math((-b - Math.sqrt(d)) / 2*a)
+            document.getElementById("result").innerHTML = "x1 = " + (-b + Math.sqrt(d)) / (2*a) + "," + "x2 = " + (-b - Math.sqrt(d)) / (2*a)
         }
     }
 }
