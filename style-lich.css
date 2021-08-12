@@ -1,0 +1,24 @@
+.a{
+    border: 1px solid black;
+}
+.first{
+    height:200px;
+}
+.heading{
+    font-weight:bold;
+    color:blue
+}
+.b{
+    background-color: red;
+}
+.c{
+    background-color: yellow;
+}
+.d{
+    background-color: blue;
+}
+h2{
+    color:white;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif
+}
