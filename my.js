@@ -13,8 +13,3 @@
         document.getElementById('result').innerHTML = "Ngiem x = " + b/a;
     }
  }
-
-
- function giai_phuong_trinh_bac_hai() {
-     // code 
- }
