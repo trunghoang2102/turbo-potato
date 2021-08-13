@@ -1,0 +1,38 @@
+table {
+    background-color: cornsilk;
+    width:500px;
+    height:300px;
+    border: 2px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse:collapse
+}
+p {
+    text-align:center;
+    color:pink;
+    font-weight: bold;
+    font-size:larger
+}
+tr{
+    height:100px
+}
+td {
+    border: 2px solid black;
+}
+h2 {
+    text-align:center,middle;
+}
+
+.button {
+    width:250px;
+    height:50px;
+}
+button {
+    width:250px;
+    height:50px;
+    background-color:cornsilk;
+    border:white
+    
+}
+
+

@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giai phuong trinh bac 2</title>
+    <link rel="stylesheet" href="ptb2.css">
 </head>
 <body>
     <table>
-        <input type="text" id="a"> X^2
-        +
-        <input type="text" id="b"> X
-        +
-        <input type="text" id="c">
-         = 0
-        <h1 id="result"></h1>
-        <button onclick="giai_phuong_trinh_bac_hai()">Result</button>
+        <tr class="title">
+            <td colspan="2"><p>Giải phương trình bậc 2</p></td>
+        </tr>
+        <tr class="debai">
+            <td colspan="2">
+                <div style="text-align:center">
+                    <input type="text" id="a" size="1"> X<sup>2</sup> + <input type="text" id="b" size="1"> X + <input type="text" id="c" size="1"> = 0
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="button"><button onclick="giai_phuong_trinh_bac_hai()">Result</button></td>
+            <td class="result" id="result"></td>
+        </tr>
         <script src="ptb2.js"></script>
     </table>
 </body>
