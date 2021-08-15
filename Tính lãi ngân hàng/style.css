@@ -1,0 +1,43 @@
+table{
+    margin: auto;
+    border: 1px solid black;
+    background-color: aliceblue;  
+    width: 450px;
+    height: 200px; 
+    border-collapse: collapse; 
+}
+.heading{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    text-align: center;
+}
+.title{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+td{
+    border: 1px solid black;
+}
+.first{
+    width:160px;
+    height: 40px;
+}
+input{
+    background-color: aliceblue;
+    border: none;
+    width:200px;
+    height:40px;    
+    
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: aliceblue;
+}

@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tính lãi ngân hàng</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <p class="heading">Ngan hang ABC lai suat 0.5%</p>
+    <table>
+        <tr>
+            <td class='first'>
+                <p>Nhập số tiền cần gửi</p>
+            </td>
+            <td>
+                <div class="input"><input type="text" id="sotien"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class='first'>
+                <p>Nhập số tháng cần gửi</p>
+            </td>
+            <td>
+                <div class="input"><input type="text" id="sothang"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class='first'>
+                <button onclick="tinh_lai_don()">Lãi đơn</button>
+            </td>
+            <td>
+                <p id="result1"></p>
+            </td>
+        </tr>
+        <tr>
+            <td class='first'>
+                <button onclick="tinh_lai_kep()">Lãi kép</button>
+            </td>
+            <td>
+                <p id="result2"></p>
+            </td>
+        </tr>     
+    </table>
+    <script src="my.js"></script>
 </body>
+
 </html>
