@@ -3,5 +3,5 @@ function chuyentien() {
     let b = +document.getElementById('to_currency').value;
     let c = +document.getElementById('sotien').value;
     let d = c * b / a;
-    document.getElementById('result').innerHTML = "So tien sau khi chuyen doi la " + d 
+    document.getElementById('result').innerHTML = "Số tiền sau khi chuyển đổi là " + d 
 }

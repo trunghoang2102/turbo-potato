@@ -10,43 +10,50 @@
 </head>
 
 <body>
-    <h1>Ngan hang ABC</h1>
-    <h2>Dich vu chuyen doi ngoai te</h2>
-    Nhap so tien can chuyen <input type="text" name="sotien" id="sotien">
-    <br><br>
+    <h1>Ngân hàng ABC</h1>
+    <br>
+    <h2>Dịch vụ chuyển đổi ngoại tệ</h2>
+    <br>
     <table>
         <tr>
-            <td>Chon don vi can chuyen doi</td>
             <td>
-                <select name="from_currency" id="from_currency">
-                    <option value=23808>VND</option>
-                    <option value=1>USD</option>
-                    <option value="109.56">JPY</option>
-                    <option value="0.85">EUR</option>
-                    <option value="0.73">GBP</option>
-                    <option value="1.38">AUD</option>
-                    <option value="1.26">CAD</option>
-                </select>
+                <p>Nhập số tiền cần chuyển đổi</p>                
+                <div class='container'>
+                    <input type="text" name="sotien" id="sotien" display="block">
+                </div>
             </td>
-        </tr>
-        <tr>
-            <td>Chon don vi can chuyen doi thanh</td>
             <td>
-                <select name="from_currency" id="from_currency">
-                    <option value=23808>VND</option>
-                    <option value=1>USD</option>
-                    <option value="109.56">JPY</option>
-                    <option value="0.85">EUR</option>
-                    <option value="0.73">GBP</option>
-                    <option value="1.38">AUD</option>
-                    <option value="1.26">CAD</option>
-                </select>
+                <p>Chọn đơn vị cần chuyển đổi</p>               
+                <div class='container'>
+                    <select name="from_currency" id="from_currency" display='block'>
+                        <option value=23808>VND</option>
+                        <option value=1>USD</option>
+                        <option value="109.56">JPY</option>
+                        <option value="0.85">EUR</option>
+                        <option value="0.73">GBP</option>
+                        <option value="1.38">AUD</option>
+                        <option value="1.26">CAD</option>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <p>Chọn đơn vị chuyển đổi thành</p>                
+                <div class='container'>
+                    <select name="to_currency" id="to_currency" display='block'>
+                        <option value=23808>VND</option>
+                        <option value=1>USD</option>
+                        <option value="109.56">JPY</option>
+                        <option value="0.85">EUR</option>
+                        <option value="0.73">GBP</option>
+                        <option value="1.38">AUD</option>
+                        <option value="1.26">CAD</option>
+                    </select>
+                </div>
             </td>
         </tr>
     </table>
     <br>
-    <button onclick='chuyentien()'>Chuyen doi</button>
-    <input type="reset" value='reset'>
+    <div class='button'><button onclick='chuyentien()'>Chuyển đổi</button></div>
     <p id='result'></p>
     <script src='my.js'></script>
 </body>
