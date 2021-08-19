@@ -12,5 +12,5 @@ function tinh_tuoi() {
         var tuoi = today_year - birthday_year;
     }
     
-    document.getElementById('result').innerHTML = "Tuoi cua ban la " + tuoi;
+    document.getElementById('result').innerHTML = "Tuổi của bạn là " + tuoi;
 }
