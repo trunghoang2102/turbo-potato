@@ -15,7 +15,7 @@ input {
     height: 45px;
     font-size: larger;
 }
-.toan_tu {
+.number, .symbol {
     background-color: white;
     border: 1px solid black;
 }
