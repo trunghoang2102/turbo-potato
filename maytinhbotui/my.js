@@ -7,7 +7,7 @@ function tinh() {
     var b = eval(a);
     
     if (b === Infinity){
-        document.getElementById("display").value = "Math ERROR";
+        document.getElementById("display").value = "Math giERROR";
         return;
     }
 
