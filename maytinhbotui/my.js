@@ -5,7 +5,14 @@ function hienthi(value) {
 function tinh() {
     var a = document.getElementById('display').value;
     var b = eval(a);
+    
+    if (b === Infinity){
+        document.getElementById("display").value = "ERROR";
+        return;
+    }
+
     document.getElementById('display').value = b;
+    
 }
 
 function xoa() {
