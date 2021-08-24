@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr class="birthday_input">
+            <td>
+                <p>Nhập ngày sinh bạn trai</p>
+                <br>
+                <div class="input"><input type="date" name="" id="birthday_boy"></div>
+            </td>
+            <td>
+                <p>Nhập ngày sinh bạn gái</p>
+                <br>
+                <div class="input"><input type="date" name="" id="birthday_girl" onchange="kiem_tra()"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="result1" class="result1"></p>
+            </td>
+            <td>
+                <p id="result2" class="result2"></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p id="result3" class="result3"></p>
+            </td>
+        </tr>
+    </table>
+    <script src="my.js"></script>
+</body>
+
+</html>

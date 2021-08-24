@@ -35,7 +35,7 @@ function doi_nam_am_lich () {
     }else if (chi == 1) {
         message += " Dau"
     }else if (chi == 2) {
-        message += " Nham"
+        message += " Tuat"
     }else if (chi == 3) {
         message += " Hoi"
     }else if (chi == 4) {
