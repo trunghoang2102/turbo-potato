@@ -1,0 +1,11 @@
+.map {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;    
+}
+.icon-rickroll, .goal {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    
+}
