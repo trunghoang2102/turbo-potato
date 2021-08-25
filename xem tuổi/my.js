@@ -39,15 +39,15 @@ function kiem_tra() {
     var chi_girl = date_girl_year % 12
     var message2 = ""
     if (chi_girl == 0) {
-        message2 = "Bạn gái tuổi Than"
+        message2 = "Bạn gái tuổi Thân"
     } else if (chi_girl == 1) {
-        message2 = "Bạn gái tuổi Dau"
+        message2 = "Bạn gái tuổi Dậu"
     } else if (chi_girl == 2) {
-        message2 = "Bạn gái tuổi Tuat"
+        message2 = "Bạn gái tuổi Tuất"
     } else if (chi_girl == 3) {
-        message2 = "Bạn gái tuổi Hoi"
+        message2 = "Bạn gái tuổi Hợi"
     } else if (chi_girl == 4) {
-        message2 = "Bạn gái tuổi ý"
+        message2 = "Bạn gái tuổi Tý"
     } else if (chi_girl == 5) {
         message2 = "Bạn gái tuổi Sửu"
     } else if (chi_girl == 6) {
