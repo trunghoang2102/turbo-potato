@@ -68,8 +68,10 @@ function kiem_tra() {
     var message3 = ""
     if (Math.abs(chi_boy - chi_girl) == 6) {
         message3 = "Tứ Hành xung"
-    } else {
+    }else if (Math.abs(chi_boy - chi_girl) == 4) {
         message3 = "Tam hợp"
+    }else {
+        message3 = "Trung tính"
     }
 
     document.getElementById("result1").innerHTML = message1;
