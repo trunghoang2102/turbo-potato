@@ -6,20 +6,39 @@
 // <input type="" onchange="" su kien onchange: khi co su thay doi o the input thi kich hoat 1 function
 
 
-
+const tank_speed = 20
 function move_up() {
-    let currentTop = parseInt(document.getElementById("object").style.top);
-    document.getElementById("object").style.top = currentTop - 20 + "px";
+    let currentTop_Rick = parseInt(document.getElementById("object").style.top);
+    let currentTop_mic = parseInt(document.getElementById("goal").style.top);
+    document.getElementById("object").style.top = currentTop_Rick - tank_speed + "px";
+
+    if(Math.abs(currentTop_Rick - tank_speed - currentTop_mic) == 20) {
+        
+    }
+    
+
+    
+
+
+    
+    
+    
 }
 function move_down() {
-    let currentTop = parseInt(document.getElementById("object").style.top);
-    document.getElementById("object").style.top = currentTop + 20 + "px";
+    var currentTop_Rick = parseInt(document.getElementById("object").style.top);
+    document.getElementById("object").style.top = currentTop_Rick + tank_speed + "px";
+    
 }
 function move_left() {
-    let currentLeft = parseInt(document.getElementById("object").style.left);
-    document.getElementById("object").style.left = currentLeft - 20 + "px";
+    var currentLeft_Rick = parseInt(document.getElementById("object").style.left);
+    document.getElementById("object").style.left = currentLeft_Rick - tank_speed + "px";
+    
 }
 function move_right() {
-    let currentLeft = parseInt(document.getElementById("object").style.left);
-    document.getElementById("object").style.left = currentLeft + 20 + "px";
+    var currentLeft_Rick = parseInt(document.getElementById("object").style.left);
+    document.getElementById("object").style.left = currentLeft_Rick + tank_speed + "px";
+    
 }
+
+
+    

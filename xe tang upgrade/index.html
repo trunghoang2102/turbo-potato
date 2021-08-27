@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" class="icon-rickroll"/>
-    
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <div class="map" style="position: relative;">
-        <div><img src="https://styles.redditmedia.com/t5_2qhk5/styles/communityIcon_v58lvj23zo551.jpg" style="top: 40px; left: 40px; width: 20px; height: 20px; position: absolute;" alt="" class="icon-rickroll" id="object" ></div>
-        <div><img src="https://i.ytimg.com/vi/13T6J9Xqfco/maxresdefault.jpg" id="goal" style="top: 40px; left: 40px; width: 20px; height: 20px; position: absolute;"></div>
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/02171059/tank.png" style="position: absolute; width: 20px; height: 20px; top:40px; left: 40px;" alt="" id="tank"></div>
+        <div><img src="https://s3.ap-southeast-1.amazonaws.com/learn.codegym.vn/media/public/2020/12/04175453/boom.png" style="position: absolute; width: 20px; height: 20px; top: 320px; left: 320px;"  alt="" id="boom"></div>
     </div>
-    <div>
-    <table>
+    
+    <div class="controller">
+        <table>
             <tr>
                 <td></td>
                 <td><button onclick="move_up()"><i class="fas fa-arrow-up"></i></button></td>
@@ -31,10 +30,10 @@
             <tr>
                 <td></td>
                 <td><button onclick="move_down()"><i class="fas fa-arrow-down"></i></button></td>
-                <td></td>
             </tr>
-    </table>
+        </table>
+        <h1 id="result"></h1>
     </div>
-    <script src="my.js"></script> 
+    <script src="my.js"></script>
 </body>
 </html>
