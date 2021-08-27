@@ -8,20 +8,22 @@ function move_up() {
     let currentLeft_boom = parseInt(document.getElementById("boom").style.left);
     document.getElementById("tank").style.top = currentTop_tank - tank_speed + "px";
 
-    if(Math.abs(currentTop_tank - tank_speed - currentTop_boom) == 20) {
-        if(currentLeft_tank == currentLeft_boom || Math.abs(currentLeft_tank - currentLeft_boom) == 20) {
+    if (currentTop_tank - tank_speed == currentTop_boom) {
+        if (Math.abs(currentLeft_tank - currentLeft_boom) == 20 || currentLeft_tank == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
-            document.getElementById("result").innerHTML = ""
+        } else {
+            document.getElementById("result").innerHTML - ""
         }
-    }else if(currentTop_tank - tank_speed == currentTop_boom) {
-        if(Math.abs(currentLeft_tank - currentLeft_boom) == 20) {
+    } else if (Math.abs(currentTop_tank - tank_speed - currentTop_boom) == 20) {
+        if (Math.abs(currentLeft_tank - currentLeft_boom) == 20 || currentLeft_tank == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
-            document.getElementById("result").innerHTML = ""
-        }   
+        } else {
+            document.getElementById("result").innerHTML - ""
+        }
+    } else {
+        document.getElementById("result").innerHTML = ""
     }
-}   
+}
 
 function move_down() {
     let currentTop_tank = parseInt(document.getElementById("tank").style.top);
@@ -29,19 +31,23 @@ function move_down() {
     let currentTop_boom = parseInt(document.getElementById("boom").style.top);
     let currentLeft_boom = parseInt(document.getElementById("boom").style.left);
     document.getElementById("tank").style.top = currentTop_tank + tank_speed + "px";
-    if(Math.abs(currentTop_tank + tank_speed -currentTop_boom) == 20) {
-        if(currentLeft_tank == currentLeft_boom || Math.abs(currentLeft_tank - currentLeft_boom) == 20) {
+
+    if (currentTop_tank + tank_speed == currentTop_boom) {
+        if (Math.abs(currentLeft_tank - currentLeft_boom) == 20 || currentLeft_tank == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
-            document.getElementById("result").innerHTML = ""
+        } else {
+            document.getElementById("result").innerHTML - ""
         }
-    }else if(currentTop_tank + tank_speed == currentTop_boom) {
-        if (Math.abs(currentLeft_tank - currentLeft_boom) == 20) {
+    } else if (Math.abs(currentTop_tank + tank_speed - currentTop_boom) == 20) {
+        if (Math.abs(currentLeft_tank - currentLeft_boom) == 20 || currentLeft_tank == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
-            document.getElementById("result").innerHTML = ""
+        } else {
+            document.getElementById("result").innerHTML - ""
         }
+    } else {
+        document.getElementById("result").innerHTML = ""
     }
+
 }
 
 function move_left() {
@@ -50,18 +56,21 @@ function move_left() {
     let currentTop_boom = parseInt(document.getElementById("boom").style.top);
     let currentLeft_boom = parseInt(document.getElementById("boom").style.left);
     document.getElementById("tank").style.left = currentLeft_tank - tank_speed + "px";
-    if(Math.abs(currentTop_tank - currentTop_boom) == 20) {
-        if(currentLeft_tank - tank_speed == currentLeft_boom || Math.abs(currentLeft_tank - tank_speed - currentLeft_boom) == 20) {
+
+    if (currentTop_tank == currentTop_boom) {
+        if (Math.abs(currentLeft_tank - tank_speed - currentLeft_boom) == 20 || currentLeft_tank - tank_speed == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
+        } else {
             document.getElementById("result").innerHTML = ""
         }
-    }else if(currentTop_tank == currentTop_boom) {
-        if(Math.abs(currentLeft_tank - tank_speed - currentLeft_boom) == 20) {
+    } else if (Math.abs(currentTop_tank - currentTop_boom) == 20) {
+        if (Math.abs(currentLeft_tank - tank_speed - currentLeft_boom) == 20 || currentLeft_tank - 20 == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
+        } else {
             document.getElementById("result").innerHTML = ""
         }
+    } else {
+        document.getElementById("result").innerHTML = ""
     }
 }
 
@@ -71,18 +80,20 @@ function move_right() {
     let currentTop_boom = parseInt(document.getElementById("boom").style.top);
     let currentLeft_boom = parseInt(document.getElementById("boom").style.left);
     document.getElementById("tank").style.left = currentLeft_tank + tank_speed + "px";
-    if(Math.abs(currentTop_tank - currentTop_boom) == 20) {
-        if(currentLeft_tank + tank_speed == currentLeft_boom || Math.abs(currentLeft_tank + tank_speed - currentLeft_boom) == 20) {
+
+    if (currentTop_tank == currentTop_boom) {
+        if (Math.abs(currentLeft_tank + tank_speed - currentLeft_boom) == 20 || currentLeft_tank + tank_speed == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
+        } else {
             document.getElementById("result").innerHTML = ""
         }
-    }else if(currentTop_tank == currentTop_boom) {
-        if(Math.abs(currentLeft_tank + tank_speed - currentLeft_boom) == 20) {
+    } else if (Math.abs(currentTop_tank - currentTop_boom) == 20) {
+        if (Math.abs(currentLeft_tank + tank_speed - currentLeft_boom) == 20 || currentLeft_tank + tank_speed == currentLeft_boom) {
             document.getElementById("result").innerHTML = "boom"
-        }else {
+        } else {
             document.getElementById("result").innerHTML = ""
         }
+    } else {
+        document.getElementById("result").innerHTML = ""
     }
 }
-
