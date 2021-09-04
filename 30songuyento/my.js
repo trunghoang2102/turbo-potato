@@ -18,7 +18,7 @@ function check_primenumber(number) {
 function print_primenumber() {
     let limit = document.getElementById("limit").value;
     let prime_number_list = [];
-    for (var i = 2; i < limit; i++) {
+    for (var i = 2; i <= limit; i++) {
         if (check_primenumber(i)) {
             prime_number_list.push(i);
         }
