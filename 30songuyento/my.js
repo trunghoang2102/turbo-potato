@@ -17,12 +17,12 @@ function check_primenumber(number) {
 }
 function print_primenumber() {
     let limit = document.getElementById("limit").value;
-    let prime_number_array = [2];
-    for (var i = 3; i < limit; i++) {
+    let prime_number_list = [];
+    for (var i = 2; i < limit; i++) {
         if (check_primenumber(i)) {
-            prime_number_array.push(i);
+            prime_number_list.push(i);
         }
     }
     console.log(prime_number_array);
-    document.write(prime_number_array);
+    document.getElementById("prime_number_list").innerHTML = prime_number_list
 }
