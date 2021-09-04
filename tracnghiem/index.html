@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Cau 1: 1 + 1 = ?</p>
+    <div id="answers">
+        <input type="radio" name="cau 1" id="A" label="answer" value=2 onchange = "correct()"> A. 2
+        <br>
+        <input type="radio" name="cau 1" id="B" label="answer" value=3 onchange = "incorrect()"> B. 3
+        <br>
+        <input type="radio" name="cau 1" id="C" label="answer" value=4 onchange = "incorrect()"> C. 4
+        <br>
+        <input type="radio" name="cau 1" id="D" label="answer" value=5 onchange = "incorrect()"> D. 5
+    </div>
+    <br>
+    <button onclick="traloi()">Kiem tra</button>
+    <script src="my.js"></script>
+</body>
+
+</html>
