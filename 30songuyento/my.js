@@ -13,7 +13,7 @@ function check_primenumber(number) {
             }
         }
     }
-    return true
+    return true;
 }
 function print_primenumber() {
     let limit = document.getElementById("limit").value;
@@ -23,6 +23,6 @@ function print_primenumber() {
             prime_number_list.push(i);
         }
     }
-    console.log(prime_number_array);
+    console.log(prime_number_list);
     document.getElementById("prime_number_list").innerHTML = prime_number_list
 }
