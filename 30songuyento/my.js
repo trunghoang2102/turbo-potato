@@ -15,14 +15,19 @@ function check_primenumber(number) {
     }
     return true;
 }
-function print_primenumber() {
+function print() {
     let limit = document.getElementById("limit").value;
     let prime_number_list = [];
+    let composite_number_list = [];
     for (var i = 2; i <= limit; i++) {
         if (check_primenumber(i)) {
             prime_number_list.push(i);
+        } else if(!check_primenumber(i)) {
+            composite_number_list.push(i);
         }
     }
     console.log(prime_number_list);
-    document.getElementById("prime_number_list").innerHTML = prime_number_list
+    console.log(composite_number_list);
+    document.getElementById("prime_number_list").innerHTML = prime_number_list;
+    document.getElementById("composite_number_list").innerHTML = composite_number_list;
 }
